@@ -52,5 +52,4 @@ function subtraction(){
 
 function result(){
     document.getElementById('text').innerHTML = String(camp)
-    camp
 }
