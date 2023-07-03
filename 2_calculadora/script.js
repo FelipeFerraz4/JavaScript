@@ -28,12 +28,19 @@ function subtraction(){
         document.getElementById('text').innerHTML = document.getElementById('text').innerHTML + '-'
     }
 }
-/*(3+3)-2*/
+/*(3 + 3)-2 - 2 = -2*/
 function result(){
     let campText = document.getElementById('text').innerHTML
     let i = 0
     let elemento1 = 0
     let size = campText.length
+    camp = 0
+    operation_a_process = 0
+
+    console.log("novo")
+    console.log(elemento1)
+    console.log(campText)
+    console.log(camp)
 
     for(i = 0; i < size; i++){
         elemento1 = campText.substring(0,1)
@@ -53,7 +60,7 @@ function result(){
                     camp = parseInt(elemento1)
                 }else{
                     camp = camp * 10
-                    camp = camp + pa
+                    camp = camp + parseInt(elemento1)
                 }
             }else if (operation_a_process == 1){
                 camp = camp + parseInt(elemento1)
