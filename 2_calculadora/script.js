@@ -11,25 +11,6 @@ function number(number){
     }
 
     document.getElementById('text').innerHTML = document.getElementById('text').innerHTML + number
-
-    if(operation_a_process == 0){
-        if (camp == 0){
-            camp = parseInt(number)
-        }
-        else{
-            camp = camp * 10
-            camp = camp + parseInt(number)
-        }
-    }
-    else{
-        if(operation_a_process == 1){
-            camp = camp + parseInt(number)
-        }
-        else{
-            camp = camp - parseInt(number)
-        }
-        operation_a_process = 0
-    }
 }
 
 function sum(){
@@ -38,7 +19,6 @@ function sum(){
     else{
         document.getElementById('text').innerHTML = document.getElementById('text').innerHTML + '+'
     }
-    operation_a_process = 1
 }
 
 function subtraction(){
@@ -47,9 +27,40 @@ function subtraction(){
     else{
         document.getElementById('text').innerHTML = document.getElementById('text').innerHTML + '-'
     }
-    operation_a_process = 2
 }
-
+/*(3+3)-2*/
 function result(){
+    let campText = document.getElementById('text').innerHTML
+    let i = 0
+    let elemento1 = 0
+    let size = campText.length
+
+    for(i = 0; i < size; i++){
+        elemento1 = campText.substring(0,1)
+        campText = campText.substring(1,campText.length)
+
+        console.log(elemento1)
+        console.log(campText)
+        console.log(camp)
+
+        if (elemento1 === '+'){
+            operation_a_process = 1
+        }else if (elemento1 === '-') {
+            operation_a_process = 2
+        }else{
+            if (operation_a_process == 0){
+                if (camp == 0){
+                    camp = parseInt(elemento1)
+                }else{
+                    camp = camp * 10
+                    camp = camp + pa
+                }
+            }else if (operation_a_process == 1){
+                camp = camp + parseInt(elemento1)
+            }else{
+                camp = camp - parseInt(elemento1)
+            }
+        }
+    }
     document.getElementById('text').innerHTML = String(camp)
 }
