@@ -4,49 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <style>
-        .tela {
-            width: 300px;
-            height: 300px;
-            padding: 20px;
-            background-color: aquamarine;
-            border-radius: 30px;
-            display: grid;
-            grid-template-areas: 
-            'visor visor visor visor'
-            'number number number operation'
-            'number number number operation'
-            'number number number operation';
-        }
-        
-        #visor {
-            grid-area: visor;
-        }
-        #number {
-            grid-area: number;
-            display: grid;
-            grid-template-columns: 31% 31% 31%;
-            gap: 3px;
-            text-decoration: none;
-            outline: none;
-            outline-style: none;
-            outline-offset: 0px;
-        }
-        #operation {
-            grid-area: operation;
-            display: grid;
-            gap: 3px;           
-        }
-        .item {
-            background-color: rgb(71, 204, 245);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        button{
-            border: 0px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="tela">
