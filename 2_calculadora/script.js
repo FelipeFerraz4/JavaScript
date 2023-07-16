@@ -30,6 +30,29 @@ function subtraction(){
     }
 }
 
+function dot(){
+    if (document.getElementById('text').innerHTML === 'Calculadora'){
+    }
+    else{
+        document.getElementById('text').innerHTML = document.getElementById('text').innerHTML + '.'
+    }
+}
+
+function multiplication(){
+    if (document.getElementById('text').innerHTML === 'Calculadora'){
+    }
+    else{
+        document.getElementById('text').innerHTML = document.getElementById('text').innerHTML + 'x'
+    }
+}
+function division(){
+    if (document.getElementById('text').innerHTML === 'Calculadora'){
+    }
+    else{
+        document.getElementById('text').innerHTML = document.getElementById('text').innerHTML + '/'
+    }
+}
+
 function operation(operation){
 
     if(operation_a_process === "sum"){
@@ -37,6 +60,12 @@ function operation(operation){
         camp2 = 0
     }else if(operation_a_process === "subtraction"){
         camp = camp - camp2
+        camp2 = 0
+    }else if(operation_a_process === "multiplication"){
+        camp = camp * camp2
+        camp2 = 0
+    }else if(operation_a_process === "division"){
+        camp = camp / camp2
         camp2 = 0
     }else{
 
@@ -74,21 +103,27 @@ function result(){
             operation_a_process = "sum"
         }else if (elemento1 === '-') {
             operation(operation_a_process)
-            operation_a_process = "subtraction"
+            operation_a_process = "subtraction"   
+        }else if (elemento1 === 'x') {
+            operation(operation_a_process)
+            operation_a_process = "multiplication"   
+        }else if (elemento1 === '/') {
+            operation(operation_a_process)
+            operation_a_process = "division"   
         }else{
             if (operation_a_process === ""){
                 if (camp == 0){
-                    camp = parseInt(elemento1)
+                    camp = parseFloat(elemento1)
                 }else{
                     camp = camp * 10
-                    camp = camp + parseInt(elemento1)
+                    camp = camp + parseFloat(elemento1)
                 }
             }else{
                 if (camp2 == 0){
-                    camp2 = parseInt(elemento1)
+                    camp2 = parseFloat(elemento1)
                 }else{
                     camp2 = camp2 * 10
-                    camp2 = camp2 + parseInt(elemento1)
+                    camp2 = camp2 + parseFloat(elemento1)
                 }
             }
         }
