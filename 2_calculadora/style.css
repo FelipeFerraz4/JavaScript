@@ -1,22 +1,23 @@
 .tela {
     width: 300px;
-    height: 300px;
+    height: 400px;
     padding: 20px;
     background-color: aquamarine;
     border-radius: 30px;
     display: grid;
     grid-template-areas: 
     'visor visor visor visor'
-    'number number number operation'
-    'number number number operation'
-    'number number number operation';
+    'first_quadrant first_quadrant first_quadrant second_quadrant'
+    'first_quadrant first_quadrant first_quadrant second_quadrant'
+    'first_quadrant first_quadrant first_quadrant second_quadrant'
+    'first_quadrant first_quadrant first_quadrant second_quadrant';
 }
 
 #visor {
     grid-area: visor;
 }
-#number {
-    grid-area: number;
+#first_quadrant {
+    grid-area: first_quadrant;
     display: grid;
     grid-template-columns: 31% 31% 31%;
     gap: 3px;
@@ -25,8 +26,8 @@
     outline-style: none;
     outline-offset: 0px;
 }
-#operation {
-    grid-area: operation;
+#second_quadrant {
+    grid-area: second_quadrant;
     display: grid;
     gap: 3px;           
 }
