@@ -3,7 +3,7 @@ let camp2 = 0
 let status_operation = false
 let operation_a_process = ""
 
-/*Erro ao somar dois elementos o segundo elemento com mais de um algarismo está somanda primeiro o primero algarismo e juntando o segundo Ex.: 15 + 18 gera 168 -> 1_(5 + 1)_8*/
+/*função dot ainda com falhas 5.52+ 0.08 = 6.319*/
 
 
 function number(number){
@@ -53,6 +53,15 @@ function division(){
     }
 }
 
+function decimal_places(number){
+    count = 1
+    while(number/10 >= 1){
+        count += 1
+        number = number/10
+    }
+    return count
+}
+
 function operation(operation){
 
     if(operation_a_process === "sum"){
@@ -66,6 +75,13 @@ function operation(operation){
         camp2 = 0
     }else if(operation_a_process === "division"){
         camp = camp / camp2
+        camp2 = 0
+    }else if(operation_a_process === "dot"){
+        console.log("teste")
+        console.log(camp)
+        console.log(camp2)
+        console.log(10**decimal_places(camp2))
+        camp = ((camp * (10**(decimal_places(camp2))) ) + camp2) / 10**(decimal_places(camp2))
         camp2 = 0
     }else{
 
@@ -81,11 +97,13 @@ function result(){
     camp = 0
     operation_a_process = ""
 
+    /*
     console.log("novo")
     console.log(elemento1)
     console.log(campText)
     console.log(camp)
     console.log(camp2)
+    */
 
     for(i = 0; i < size; i++){
         elemento1 = campText.substring(0,1)
@@ -110,6 +128,9 @@ function result(){
         }else if (elemento1 === '/') {
             operation(operation_a_process)
             operation_a_process = "division"   
+        }else if(elemento1 === '.'){
+            operation(operation_a_process)
+            operation_a_process = "dot"
         }else{
             if (operation_a_process === ""){
                 if (camp == 0){
