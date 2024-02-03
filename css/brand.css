@@ -1,0 +1,22 @@
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.brand_image {
+    width: 100px;
+    height: 100px;
+}
+
+.brand_title {
+    margin: 0px;
+    color: aliceblue;
+    font-size:35px;
+
+}

@@ -2,15 +2,27 @@
     --color1:#58C2FF;
     --color2:#4B80C5;
     --color3:#004AAD;
+    --color4: #111;
 }
 
-.default-color {
-    background-color: var(--color2);
+.default_color {
+    background-color: var(--color4);
     color: aliceblue;
 }
 
---container-flex {
+.container_flex {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+.navbar_header {
+    
+}
+
+.navbar_item {
+    padding: 0em 2em;
+    margin: 0px;
 }
