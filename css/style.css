@@ -1,0 +1,16 @@
+:root {
+    --color1:#58C2FF;
+    --color2:#4B80C5;
+    --color3:#004AAD;
+}
+
+.default-color {
+    background-color: var(--color2);
+    color: aliceblue;
+}
+
+--container-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
