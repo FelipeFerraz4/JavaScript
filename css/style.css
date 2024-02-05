@@ -3,11 +3,16 @@
     --color2:#4B80C5;
     --color3:#004AAD;
     --color4: #111;
+    --color5: aliceblue;
+}
+
+body {
+    margin: 0px;
 }
 
 .default_color {
     background-color: var(--color4);
-    color: aliceblue;
+    color: var(--color5);
 }
 
 .container_flex {
@@ -16,13 +21,18 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.navbar_header {
-    
+    margin: 0px;
 }
 
 .navbar_item {
     padding: 0em 2em;
-    margin: 0px;
+    list-style-type: none;
+}
+
+.item {
+    text-decoration: none;
+    color: var(--color5);
+}
+.item:hover {
+    background-color: var(--color3);
 }
