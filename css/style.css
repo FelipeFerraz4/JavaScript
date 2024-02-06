@@ -24,15 +24,26 @@ body {
     margin: 0px;
 }
 
-.navbar_item {
-    padding: 0em 2em;
-    list-style-type: none;
+.home {
+    padding-left: 1em;
 }
 
-.item {
-    text-decoration: none;
-    color: var(--color5);
+.home_image {
+    margin-left: 10em;
 }
-.item:hover {
-    background-color: var(--color3);
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 5em;   
+}
+
+.about_title {
+    margin-bottom: 2em;
+}
+
+.about_text {
+    width: 30em;
 }

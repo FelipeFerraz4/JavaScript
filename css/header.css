@@ -1,0 +1,12 @@
+.navbar_item {
+    padding: 0em 2em;
+    list-style-type: none;
+}
+
+.item {
+    text-decoration: none;
+    color: var(--color5);
+}
+.item:hover {
+    background-color: var(--color3);
+}
