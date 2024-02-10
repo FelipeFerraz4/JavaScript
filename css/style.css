@@ -26,6 +26,7 @@ body {
 
 .home {
     padding-left: 1em;
+    height: 80vh;
 }
 
 .home_image {
@@ -38,12 +39,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2em 5em;   
+    height: 80vh;
 }
 
 .about_title {
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 .about_text {
-    width: 30em;
+    width: 35em;
 }
