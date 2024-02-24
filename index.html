@@ -8,10 +8,11 @@
     <link rel="shortcut icon" href="./assets/favicon/favicon_logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/brand.css">
+    <link rel="stylesheet" href="./css/header.css">
     <title>Portfolio - Felipe Ferraz</title>
 </head>
 <body>
-    <header class="default_color container_flex">
+    <header class="default_color container_flex" id="home_section">
         <a class="brand" href="./index.html">
           <img class="brand_image" src="./assets/image/brand/brand.png" alt="rabosa azul" srcset="">
           <h2 class="brand_title">Blue Fox</h2>
@@ -19,10 +20,10 @@
         <nav class="navbar_header">
           <ul class="container_flex" >
             <li class="navbar_item">
-              <a class="item" href="#">Início</a>
+              <a class="item" href="#home_section">Início</a>
             </li>
             <li class="navbar_item">
-              <a class="item" href="#">Sobre mim</a>
+              <a class="item" href="#about_section">Sobre mim</a>
             </li>
             <li class="navbar_item">
               <a class="item" href="#">Projetos</a>
@@ -30,10 +31,140 @@
             <li class="navbar_item">
               <a class="item" href="#">Atividades Extra</a>
             </li>
+            <li class="dropdown navbar_item">
+              <button class="btn btn-secondary dropdown-toggle default_color" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
     </header>
-    <main>Felipe Ferraz</main>
+    <main>
+      <section class="home container_flex default_color">
+        <div>
+          <h1>Olá, eu sou Felipe Ferraz</h1>
+          <h2>Desenvolvedor Front-End</h2>
+        </div>
+        <picture class="home_image">
+          <img src="./assets/image/brand/LogoFoxBlue.png" alt="" srcset="">
+        </picture>
+      </section>
+      <section id="about_section" class="container default_color">
+        <h1 class="row about_title justify-content-md-center">Sobre mim</h1>
+        <div class="row px-3 py-1">
+          <div class="col">
+            <h3 class="row justify-content-md-center mb-4">Prefácio</h3>
+            <p class="row about_text px-5">
+              Sou Desenvolvedor Front-End com experiencia tanto na Web, quanto
+              Mobile, com foco em software de automatização de serviços. Atualmente
+              sou aluno do curso de Ciências da Computação na Universidade Federal do Ceará - UFCA e faço parte da Calang.io empresa júnior do curso.
+            </p>
+          </div>
+          <div class="col">
+            <h3 class="row justify-content-md-center mb-4">Contatos</h3>
+            <div class="row card-group">
+              <a href="https://github.com/FelipeFerraz4" class="col card default_color about_contatos container_column">
+                <img class="row card-img-bottom about_skill_image py-1" src="./assets/icons/png/github.png" alt="Card image cap">
+                <div class="row card-body">
+                  <h5 class="card-title text-center">Github</h5>
+                  <h5 class="card-title text-center">FelipeFerraz4</h5>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/felipe-ferraz-006b48260/"  class="col card default_color about_contatos container_column">
+                <img class="row card-img-bottom about_skill_image py-1" src="./assets/icons/png/linkedin.png" alt="Card image cap">
+                <div class="row card-body">
+                  <h5 class="card-title text-center">
+                    Linkedin
+                  </h5>
+                  <h5 class="card-title text-center">
+                    Felipe Ferraz
+                  </h5>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/felipeferraz_8/" class="col card default_color about_contatos container_column">
+                <img class="row card-img-bottom about_skill_image py-1" src="./assets/icons/png/instagram.png" alt="Card image cap">
+                <div class="row card-body">
+                  <h5 class="card-title text-center">
+                    Instagram
+                  </h5>
+                  <h5 class="card-title text-center">
+                    felipeferraz_8
+                  </h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h3 class="row justify-content-md-center py-3">Habilidades</h3>
+          <div class="row container_flex card-group">
+            <div class="col card default_color about_skill container_column">
+              <div class="row card-body">
+                <h5 class="card-title">HTML5</h5>
+              </div>
+              <img class="row card-img-bottom about_skill_image" src="./assets/icons/png/html5.png" alt="Card image cap">
+            </div>
+            <div class="col card default_color about_skill container_column">
+              <div class="row card-body">
+                <h5 class="card-title">CSS3</h5>
+              </div>
+              <img class="row card-img-bottom about_skill_image" src="./assets/icons/png/css3.png" alt="Card image cap">
+            </div>
+            <div class="col card default_color about_skill container_column">
+              <div class="row card-body">
+                <h5 class="card-title">JavaScript</h5>
+              </div>
+              <img class="row card-img-bottom about_skill_image" src="./assets/icons/png/js2.png" alt="Card image cap">
+            </div>
+            <div class="col card default_color about_skill container_column">
+              <div class="row card-body">
+                <h5 class="card-title">Figma</h5>
+              </div>
+              <img class="row card-img-bottom about_skill_image" src="./assets/icons/png/figma2.png" alt="Card image cap">
+            </div>
+            <div class="col card default_color about_skill container_column">
+              <div class="row card-body">
+                <h5 class="card-title">Java</h5>
+              </div>
+              <img class="row card-img-bottom about_skill_image" src="./assets/icons/png/java.png" alt="Card image cap">
+            </div>
+            <div class="col card default_color about_skill container_column">
+              <div class="row card-body">
+                <h5 class="card-title">Python</h5>
+              </div>
+              <img class="row card-img-bottom about_skill_image" src="./assets/icons/png/python (2).png" alt="Card image cap">
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section id="about_section" class="container default_color">
+        <h1 class="row about_title justify-content-md-center">Sobre mim</h1>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
