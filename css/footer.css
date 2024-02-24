@@ -1,0 +1,11 @@
+footer {
+    margin: 0px;
+    padding: 1em 1em 0em 1em;
+    border-top: white;
+}
+
+.footer_text {
+    padding: 0.4em 0em;
+    font-size: 1em;
+    border: 6em white;
+}

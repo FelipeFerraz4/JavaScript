@@ -7,18 +7,57 @@
     
     <link rel="shortcut icon" href="./assets/favicon/favicon_logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/brand.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/brand.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/additional_activity.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Portfolio - Felipe Ferraz</title>
 </head>
 <body>
-    <header class="default_color container_flex" id="home_section">
+    <header class="default_color container">
         <a class="brand" href="./index.html">
           <img class="brand_image" src="./assets/image/brand/brand.png" alt="rabosa azul" srcset="">
           <h2 class="brand_title">Blue Fox</h2>
         </a>
-        <nav class="navbar_header">
-          <ul class="container_flex" >
+        <div class="mobile_offcanvas"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <div class="mobile_offcanvas_line"></div>
+          <div class="mobile_offcanvas_line"></div>
+          <div class="mobile_offcanvas_line"></div>
+        </div>
+        
+        <div class="offcanvas offcanvas-end default_color" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Guia de Informações</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16" data-bs-dismiss="offcanvas" aria-label="Close">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+            </svg>
+          </div>
+
+          <div class="offcanvas-body">
+            <nav class="header_navbar_offcanvas">
+              <ul class="header_navbar_list" >
+                <li class="navbar_item">
+                  <a class="item" href="#home_section">Início</a>
+                </li>
+                <li class="navbar_item">
+                  <a class="item" href="#about_section">Sobre mim</a>
+                </li>
+                <li class="navbar_item">
+                  <a class="item" href="#project_section">Projetos</a>
+                </li>
+                <li class="navbar_item">
+                  <a class="item" href="#additional_activity_section">Atividade Adicional</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <nav class="header_navbar">
+          <ul class="header_navbar_list" >
             <li class="navbar_item">
               <a class="item" href="#home_section">Início</a>
             </li>
@@ -26,26 +65,39 @@
               <a class="item" href="#about_section">Sobre mim</a>
             </li>
             <li class="navbar_item">
-              <a class="item" href="#">Projetos</a>
+              <a class="item" href="#project_section">Projetos</a>
             </li>
-            <li class="navbar_item">
-              <a class="item" href="#">Atividades Extra</a>
-            </li>
-            <li class="dropdown navbar_item">
-              <button class="btn btn-secondary dropdown-toggle default_color" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown button
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li class="header_sub_item">
+              <div class="navbar_item">
+                <a class="item" href="#additional_activity_section">Atividade Adicional</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+              </div>
+              <ul class="sub_item">
+                <li class="navbar_item"><a class="item" href="#">Beecrowd</a></li>
+                <li class="navbar_item"><a class="item" href="#">Empresarial</a></li>
+                <li class="navbar_item"><a class="item" href="#">Acadêmicos</a></li>
               </ul>
             </li>
+            <!-- <li style="">
+              <div class="navbar_item">
+                <a class="item" href="#additional_activity_section">Atividade Adicional</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+              </div>
+              <ul class="">
+                <li><a class="" href="#">Action</a></li>
+                <li><a class="" href="#">Another action</a></li>
+                <li><a class="" href="#">Something else here</a></li>
+              </ul>
+            </li> -->
           </ul>
         </nav>
     </header>
-    <main>
-      <section class="home container_flex default_color">
+    <!-- <main>
+      <section id="home_section" class="container_flex default_color">
         <div>
           <h1>Olá, eu sou Felipe Ferraz</h1>
           <h2>Desenvolvedor Front-End</h2>
@@ -54,8 +106,8 @@
           <img src="./assets/image/brand/LogoFoxBlue.png" alt="" srcset="">
         </picture>
       </section>
-      <section id="about_section" class="container default_color">
-        <h1 class="row about_title justify-content-md-center">Sobre mim</h1>
+      <section id="about_section" class="default_color container">
+        <h2 class="row section_title justify-content-md-center">Sobre mim</h2>
         <div class="row px-3 py-1">
           <div class="col">
             <h3 class="row justify-content-md-center mb-4">Prefácio</h3>
@@ -143,29 +195,30 @@
         </div>
 
       </section>
-      <section id="about_section" class="container default_color">
-        <h1 class="row about_title justify-content-md-center">Sobre mim</h1>
+      <section id="project_section" class="default_color container">
+        <h2 class="row section_title justify-content-md-center">Projetos</h2>
         <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
+          <img src="./assets/image/project/Jogo_dos_5_simbolos.png" class="card-img-top" alt="imagem do Jogo dos 5 simbolo">
+          <div class="card-body default_color">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown button
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+      </section>
+      <section id="additional_activity_section" class="default_color container">
+        <h2 class="row section_title justify-content-md-center">Atividade Adicional</h2>
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/image/project/Jogo_dos_5_simbolos.png" class="card-img-top" alt="imagem do Jogo dos 5 simbolo">
+          <div class="card-body default_color">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
         </div>
       </section>
-    </main>
-    <footer></footer>
+    </main> -->
+    <footer class="default_color container_flex">
+      <p class="footer_text">Copyright © Todos os direitos reservados a Felipe Ferraz</p>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

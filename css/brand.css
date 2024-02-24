@@ -10,13 +10,12 @@
 }
 
 .brand_image {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .brand_title {
     margin: 0px;
     color: aliceblue;
-    font-size:35px;
-
+    font-size: 20px;
 }
