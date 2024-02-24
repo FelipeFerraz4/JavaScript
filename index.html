@@ -12,7 +12,7 @@
     <title>Portfolio - Felipe Ferraz</title>
 </head>
 <body>
-    <header class="default_color container_flex">
+    <header class="default_color container_flex" id="home_section">
         <a class="brand" href="./index.html">
           <img class="brand_image" src="./assets/image/brand/brand.png" alt="rabosa azul" srcset="">
           <h2 class="brand_title">Blue Fox</h2>
@@ -31,11 +31,21 @@
             <li class="navbar_item">
               <a class="item" href="#">Atividades Extra</a>
             </li>
+            <li class="dropdown navbar_item">
+              <button class="btn btn-secondary dropdown-toggle default_color" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
     </header>
     <main>
-      <section id="home_section" class="home container_flex default_color">
+      <section class="home container_flex default_color">
         <div>
           <h1>Olá, eu sou Felipe Ferraz</h1>
           <h2>Desenvolvedor Front-End</h2>
@@ -132,6 +142,27 @@
           </div>
         </div>
 
+      </section>
+      <section id="about_section" class="container default_color">
+        <h1 class="row about_title justify-content-md-center">Sobre mim</h1>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer></footer>
