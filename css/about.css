@@ -1,8 +1,11 @@
-
-/* #about_section {
+/* 
+#about_section {
     margin: 0px;
-    padding: 1em;
-    max-width: max-content;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 } */
 
 .about_text{
@@ -11,15 +14,14 @@
 
 .about_skill {
     background-color: var(--color6);
-    padding: 0em 0em 1em 0em;
-    margin: 0em 1em;
-    width: 170px;
-    height: 160px;
+    padding: 1em 0em;
 }
 
+.about_image {
+    width: 20%;
+}
 .about_skill_image {
-    width: 60px;
-    height: 80px;
+    width: 40%;
 }
 
 .about_contatos {
@@ -31,4 +33,22 @@
     text-decoration: none;
     color: var(--color5);
     padding: 0.5em;
+}
+
+@media screen and (min-width: 576px) {
+    .about_image {
+        width: 30%;
+    }
+    .about_skill_image {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about_image {
+        width: 50%;
+    }
+    .about_skill_image {
+        width: 30%;
+    }
 }

@@ -17,7 +17,7 @@
     <title>Portfolio - Felipe Ferraz</title>
 </head>
 <body>
-    <header class="default_color container">
+    <header id="Home" class="default_color container">
         <a class="brand" href="./index.html">
           <img class="brand_image" src="./assets/image/brand/brand.png" alt="rabosa azul" srcset="">
           <h2 class="brand_title">Blue Fox</h2>
@@ -40,7 +40,7 @@
             <nav class="header_navbar_offcanvas">
               <ul class="header_navbar_list" >
                 <li class="navbar_item">
-                  <a class="item" href="#home_section">Início</a>
+                  <a class="item" href="#Home">Início</a>
                 </li>
                 <li class="navbar_item">
                   <a class="item" href="#about_section">Sobre mim</a>
@@ -48,8 +48,18 @@
                 <li class="navbar_item">
                   <a class="item" href="#project_section">Projetos</a>
                 </li>
-                <li class="navbar_item">
-                  <a class="item" href="#additional_activity_section">Atividade Adicional</a>
+                <li class="header_sub_item">
+                  <div class="navbar_item">
+                    <a class="item" href="#additional_activity_section">Atividade Adicional</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                      <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                  </div>
+                  <ul class="sub_item">
+                    <li class="navbar_item"><a class="item" href="#">Beecrowd</a></li>
+                    <li class="navbar_item"><a class="item" href="#">Empresarial</a></li>
+                    <li class="navbar_item"><a class="item" href="#">Acadêmicos</a></li>
+                  </ul>
                 </li>
               </ul>
             </nav>
@@ -59,7 +69,7 @@
         <nav class="header_navbar">
           <ul class="header_navbar_list" >
             <li class="navbar_item">
-              <a class="item" href="#home_section">Início</a>
+              <a class="item" href="#Home">Início</a>
             </li>
             <li class="navbar_item">
               <a class="item" href="#about_section">Sobre mim</a>
@@ -80,24 +90,11 @@
                 <li class="navbar_item"><a class="item" href="#">Acadêmicos</a></li>
               </ul>
             </li>
-            <!-- <li style="">
-              <div class="navbar_item">
-                <a class="item" href="#additional_activity_section">Atividade Adicional</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                </svg>
-              </div>
-              <ul class="">
-                <li><a class="" href="#">Action</a></li>
-                <li><a class="" href="#">Another action</a></li>
-                <li><a class="" href="#">Something else here</a></li>
-              </ul>
-            </li> -->
           </ul>
         </nav>
     </header>
-    <!-- <main>
-      <section id="home_section" class="container_flex default_color">
+    <main>
+      <section id="home_section" class="default_color container">
         <div>
           <h1>Olá, eu sou Felipe Ferraz</h1>
           <h2>Desenvolvedor Front-End</h2>
@@ -106,94 +103,68 @@
           <img src="./assets/image/brand/LogoFoxBlue.png" alt="" srcset="">
         </picture>
       </section>
-      <section id="about_section" class="default_color container">
-        <h2 class="row section_title justify-content-md-center">Sobre mim</h2>
-        <div class="row px-3 py-1">
-          <div class="col">
-            <h3 class="row justify-content-md-center mb-4">Prefácio</h3>
-            <p class="row about_text px-5">
+      <section id="about_section" class="default_color container justify-content-center aling-item-center">
+        <div class="row">
+          <h2 class="col text-center my-5">Sobre mim</h2>
+        </div>
+        <div class="row py-5">
+          <div class="col-12 col-lg-6">
+            <h3 class="text-center">Prefácio</h3>
+            <p class="text-center py-2">
               Sou Desenvolvedor Front-End com experiencia tanto na Web, quanto
               Mobile, com foco em software de automatização de serviços. Atualmente
               sou aluno do curso de Ciências da Computação na Universidade Federal do Ceará - UFCA e faço parte da Calang.io empresa júnior do curso.
             </p>
           </div>
-          <div class="col">
-            <h3 class="row justify-content-md-center mb-4">Contatos</h3>
-            <div class="row card-group">
-              <a href="https://github.com/FelipeFerraz4" class="col card default_color about_contatos container_column">
-                <img class="row card-img-bottom about_skill_image py-1" src="./assets/icons/png/github.png" alt="Card image cap">
-                <div class="row card-body">
-                  <h5 class="card-title text-center">Github</h5>
-                  <h5 class="card-title text-center">FelipeFerraz4</h5>
-                </div>
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <h3 class="col-sm-12 text-center">Contatos</h3>
+              <a href="" class="col-sm-4 text-center my-3 default_color" style="text-decoration: none;">
+                <img class="about_image" src="assets/icons/png/github.png" alt="Logo do Github">
+                <h5 class="my-1">Github</h5>
+                <h5 class="my-1">FelipeFerraz4</h5>
               </a>
-              <a href="https://www.linkedin.com/in/felipe-ferraz-006b48260/"  class="col card default_color about_contatos container_column">
-                <img class="row card-img-bottom about_skill_image py-1" src="./assets/icons/png/linkedin.png" alt="Card image cap">
-                <div class="row card-body">
-                  <h5 class="card-title text-center">
-                    Linkedin
-                  </h5>
-                  <h5 class="card-title text-center">
-                    Felipe Ferraz
-                  </h5>
-                </div>
+              <a href="" class="col-sm-4 text-center my-3 default_color" style="text-decoration: none;">
+                <img class="about_image" src="assets/icons/png/instagram.png" alt="Logo do Github">
+                <h5 class="my-1">Instagram</h5>
+                <h5 class="my-1">felipeferraz_8</h5>
               </a>
-              <a href="https://www.instagram.com/felipeferraz_8/" class="col card default_color about_contatos container_column">
-                <img class="row card-img-bottom about_skill_image py-1" src="./assets/icons/png/instagram.png" alt="Card image cap">
-                <div class="row card-body">
-                  <h5 class="card-title text-center">
-                    Instagram
-                  </h5>
-                  <h5 class="card-title text-center">
-                    felipeferraz_8
-                  </h5>
-                </div>
+              <a href="" class="col-sm-4 text-center my-3 default_color" style="text-decoration: none;">
+                <img class="about_image" src="assets/icons/png/linkedin.png" alt="Logo do Github">
+                <h5 class="my-1">Linkedin</h5>
+                <h5 class="my-1">Felipe Ferraz</h5>
               </a>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <h3 class="row justify-content-md-center py-3">Habilidades</h3>
-          <div class="row container_flex card-group">
-            <div class="col card default_color about_skill container_column">
-              <div class="row card-body">
-                <h5 class="card-title">HTML5</h5>
+          <div class="col-12">
+            <div class="row">
+              <h3 class="col-12 text-center mb-4">Habilidades</h3>
+              <div class="col-6 col-sm-4 text-center my-3">
+                <h5>HTML5</h5>
+                <img class="about_skill_image" src="./assets/icons/png/html5.png" alt="Logo do HTML5" srcset="">
               </div>
-              <img class="row card-img-bottom about_skill_image" src="./assets/icons/png/html5.png" alt="Card image cap">
-            </div>
-            <div class="col card default_color about_skill container_column">
-              <div class="row card-body">
-                <h5 class="card-title">CSS3</h5>
+              <div class="col-6 col-sm-4 text-center my-3">
+                <h5>CSS3</h5>
+                <img class="about_skill_image" src="./assets/icons/png/css3.png" alt="Logo do CSS3" srcset="">
               </div>
-              <img class="row card-img-bottom about_skill_image" src="./assets/icons/png/css3.png" alt="Card image cap">
-            </div>
-            <div class="col card default_color about_skill container_column">
-              <div class="row card-body">
-                <h5 class="card-title">JavaScript</h5>
+              <div class="col-6 col-sm-4 text-center my-3">
+                <h5>JavaScript</h5>
+                <img class="about_skill_image" src="./assets/icons/png/js2.png" alt="Logo do JavaScript" srcset="">
               </div>
-              <img class="row card-img-bottom about_skill_image" src="./assets/icons/png/js2.png" alt="Card image cap">
-            </div>
-            <div class="col card default_color about_skill container_column">
-              <div class="row card-body">
-                <h5 class="card-title">Figma</h5>
+              <div class="col-6 col-sm-4 text-center my-3">
+                <h5>Figma</h5>
+                <img class="about_skill_image" src="./assets/icons/png/figma2.png" alt="Logo do Figma" srcset="">
               </div>
-              <img class="row card-img-bottom about_skill_image" src="./assets/icons/png/figma2.png" alt="Card image cap">
-            </div>
-            <div class="col card default_color about_skill container_column">
-              <div class="row card-body">
-                <h5 class="card-title">Java</h5>
+              <div class="col-6 col-sm-4 text-center my-3">
+                <h5>Java</h5>
+                <img class="about_skill_image" src="./assets/icons/png/java.png" alt="Logo do Java" srcset="">
               </div>
-              <img class="row card-img-bottom about_skill_image" src="./assets/icons/png/java.png" alt="Card image cap">
-            </div>
-            <div class="col card default_color about_skill container_column">
-              <div class="row card-body">
-                <h5 class="card-title">Python</h5>
+              <div class="col-6 col-sm-4 text-center my-3">
+                <h5>Python</h5>
+                <img class="about_skill_image" src="../assets/icons/png/python (2).png" alt="Logo do Python" srcset="">
               </div>
-              <img class="row card-img-bottom about_skill_image" src="./assets/icons/png/python (2).png" alt="Card image cap">
             </div>
           </div>
-        </div>
-
       </section>
       <section id="project_section" class="default_color container">
         <h2 class="row section_title justify-content-md-center">Projetos</h2>
@@ -215,7 +186,7 @@
           </div>
         </div>
       </section>
-    </main> -->
+    </main>
     <footer class="default_color container_flex">
       <p class="footer_text">Copyright © Todos os direitos reservados a Felipe Ferraz</p>
     </footer>

@@ -18,6 +18,14 @@ body {
 
 }
 
+.section_title  {
+    
+}
+
+.sub_title {
+
+}
+
 .default_color {
     background-color: var(--color4);
     color: var(--color5);
